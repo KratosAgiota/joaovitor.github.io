@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head> 
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">João Vitor</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MIM</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRÍCULO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>João Vitor</h1>
+            <h2></h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/joaovitornunessantos/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/jvitornsantos" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Objetivo Profissional</h2>
+            <p>Tenho foco em crescimento profissional contínuo e estou sempre buscando aprender e me desenvolver para atingir meus objetivos e contribuir ainda mais para o sucesso da empresa.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Meu dados</h3>
+                    <ul>
+                        <li>
+                            <strong>Nome:</strong>
+                            João Vitor Nunes Santos
+                        </li>
+                        <li>
+                            <strong>Celular:</strong>
+                            (11) 97958-1946
+                        </li>
+                        <li>
+                            <strong>E-mail:</strong>joaovitornunessantos@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Endereço:</strong>
+                            Vila Carmosina, SP
+                        </li>
+                        <li>
+                            <strong>Cargo: </strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Lazer</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JOGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>ESPORTES</span>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://drive.google.com/file/d/17cjixPkBdTIQpZJgklrUXlIBeOTtjf1i/view" target="_blank">
+                <button>
+                    Baixar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Pacote Office(Intermediário)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dashboards Google Data Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manutenção de computadores</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profissionais</h3>
+                    <div class="skill">
+                        <span>Liderança</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicação</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolução de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículo</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formação Acadêmica e Cursos</h3>
+                    <div class="item izq">
+                        <h4>E.E Francisca Rosa da Costa</h4>
+                        <span class="casa">Ensino médio completo</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Fundação Bradesco</h4>
+                        <span class="casa">MS Excel Intermediário</span>
+                        <span class="fecha">janeiro de 2018</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Polly Cursos</h4>
+                        <span class="casa">Pacote office e internet</span>
+                        <span class="fecha">janeiro de 2016</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiência de trabalho</h3>
+                    <div class="item der">
+                        <h4>Teleperformance</h4>
+                        <span class="casa">Líder Educador & Expert em Iteração</span>
+                        <span class="fecha"> 
+                            <br>
+                            Líder Educador mar de 2022 - jul de 2022 · 5 meses
+                            <br> 
+                            Expert em Iteração jul de 2021 - mar de 2022 · 9 meses</span>
+                        <p> São Paulo e Região, Brasil</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Vikstar Contact Center</h4>
+                        <span class="casa">Back Office & Operador de telemarketing</span>
+                        <span class="fecha"> 
+                            <br> 
+                            Back Office ago de 2019 - mar de 2022 · 2 anos 8 meses 
+                            <br> 
+                            Operador de telemarketing junho de 2018 - ago de 2019 · 1 ano 3 meses </span>
+                        <p>São Paulo e Região, Brasil</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Uranet Projetos e Sistemas</h4>
+                        <span class="casa">Operador de telemarketing</span>
+                        <span class="fecha"> <br> Tempo integral · 4 meses jan de 2018 - abr de 2018</span>
+                        <p>São Paulo e Região, Brasil</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFÓLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/BGR_Estatisticas_da_Equipe-1.png" alt="">
+                    <div class="overlay">
+                        <h3>Google Data Studio</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/BGR_Estatisticas_da_Equipe-2.png" alt="">
+                    <div class="overlay">
+                        <h3>Google Data Studio</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/BGR_Estatisticas_da_Equipe-3.png" alt="">
+                    <div class="overlay">
+                        <h3>Google Data Studio</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/BGR_Estatisticas_da_Equipe-4.png" alt="">
+                    <div class="overlay">
+                        <h3>Google Data Studio</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto2"> 
+                    <img src="img/project.gif" alt="">
+                    <div class="overlay">
+                        <h3>Python</h3>
+                        <p>Participação na lógica do software</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/joaovitornunessantos/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/jvitornsantos" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
